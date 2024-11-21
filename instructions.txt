@@ -1,0 +1,107 @@
+Data Structures
+Final Project 2024
+
+Smart Garden Simulator
+
+Create a simulation of a smart garden that uses various data structures to manage plants, weather conditions, watering schedules, and growth cycles.  The system will interactively simulate plant growth based on environmental conditions and user-defined settings.
+
+Use Cases:
+
+1.	Add Plant
+o	Description: Users can add different types of plants with specific growth parameters.
+o	Input: Plant name, species, growth rate, watering frequency, and ideal conditions.
+o	Output: Confirmation message and updated list of plants.
+2.	Remove Plant
+o	Description: Users can remove a plant from the garden.
+o	Input: Plant name or ID.
+o	Output: Confirmation message and updated list of plants.
+3.	Simulate Weather Conditions
+o	Description: Users can input weather conditions (sunny, rainy, cloudy) to see how it affects plant growth.
+o	Input: Weather type and duration.
+o	Output: Updated growth status for each plant.
+4.	Water Plants
+o	Description: Users can initiate watering of plants based on their schedules.
+o	Input: Plant name or ID.
+o	Output: Confirmation of watering and updated water levels.
+5.	Monitor Growth
+o	Description: Users can check the growth status of all plants in the garden.
+o	Output: List of all plants with their current height and health status.
+6.	View Garden Status
+o	Description: Users can view the overall status of the garden, including the number of healthy plants, plants needing water, and environmental conditions.
+o	Output: Summary report of the garden status.
+
+
+Data Structures
+
+•	Plants: Use a class with attributes for each plant's growth parameters.
+•	Plant Collection: Use a dictionary to store plants with unique IDs for fast access.
+•	Weather Conditions: Use an enumerated type or set to manage different weather conditions.
+•	Watering Schedule: Use a queue to manage watering tasks based on plant requirements.
+
+
+
+
+
+File I/O
+
+•	Plants Data File: plants.txt (storing plant details)
+•	Garden Status File: garden_status.txt (storing the current state of the garden)
+•	Weather Log File: weather_log.txt (logging weather conditions)
+
+Implementation Steps
+
+1.	Define Classes
+o	Plant: Attributes like name, species, growth rate, watering frequency, height, and health status.
+o	Garden: Methods to manage plant collections, simulate weather, and monitor growth.
+2.	File I/O Functions
+o	Functions to read from and write to data files on startup and shutdown.
+3.	User Interface
+o	Command-line interface to interact with the simulator.
+o	In your main menu, give the user two options at first.  One to run a simulation of the gardening app, or two to manually interact with the simulation as it displays garden status.
+
+Test Cases (I will use these to grade the operations with my own data and inputs)
+
+1.	Add Plant
+o	Test adding a valid plant.
+o	Test adding a plant with missing parameters.
+2.	Remove Plant
+o	Test removing an existing plant.
+o	Test removing a non-existing plant.
+3.	Simulate Weather Conditions
+o	Test with different weather types and durations.
+o	Test effects on plant growth.
+4.	Water Plants
+o	Test watering a plant that needs water.
+o	Test attempting to water a plant that doesn’t need water.
+5.	Monitor Growth
+o	Test retrieving growth status for all plants.
+6.	View Garden Status
+o	Test viewing the overall status of the garden.
+
+
+Grading Rubric:
+
+•	Functionality (40%): All features are implemented and work as intended.
+•	Code Quality (30%): Code is well-structured, readable, and follows best practices.
+•	Data Structures Usage (20%): Appropriate data structures are used for efficiency and effectiveness.
+•	Testing (10%): Comprehensive test cases are provided, and all functionalities are adequately tested.
+
+
+Examples of File I/O – follow these formats to allow me to add my text files to the grading and execution of your code:
+
+plants.txt
+ID,Name,Species,GrowthRate,WateringFrequency,Height,HealthStatus
+1,Rose,Flower,5,2,10,Healthy
+2,Cactus,Succulent,1,7,5,Healthy
+
+garden_status.txt
+TotalPlants: 2
+HealthyPlants: 2
+NeedsWater: 0
+
+weather_log.txt
+Date,WeatherType,Duration
+2024-10-01,Sunny,5
+2024-10-02,Rainy,3
+
+

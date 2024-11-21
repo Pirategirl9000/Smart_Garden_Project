@@ -1,0 +1,3 @@
+ID,Name,Species,GrowthRate,WateringFrequency,Height,HealthStatus,minTemp,maxTemp
+1,Rose,Flower,5,200,10,Healthy,60,100
+2,Cactus,Succulent,1,7,5,Healthy,70,130

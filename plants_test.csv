@@ -1,0 +1,4 @@
+ID,Name,Species,GrowthRate,WateringFrequency,Height,HealthStatus
+1,Rose,Flower,5,2,10,Healthy
+2,Cactus,Succulent,1,7,5,Healthy
+3,Cucumber,Root,1,7,5,Healthy
